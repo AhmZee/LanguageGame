@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Game</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <p class="game-title">English Fulani Yoruba</p>
+
+      <button
+        onclick="
+      playGame('english');
+    "
+      >
+        <img src="images/english.jpg" class="move-icon move-select" />
+      </button>
+
+      <button
+        onclick="
+      playGame('fulani');
+    "
+      >
+        <img src="images/fulani.jpg" class="move-icon move-select" />
+      </button>
+
+      <button
+        onclick="
+      playGame('yoruba');
+    "
+      >
+        <img src="images/yoruba.jpg" class="move-icon move-select" />
+      </button>
+
+      <p class="js-moves"></p>
+      <p class="js-result-display"></p>
+      <p class="js-score-display">Wins: 0, Losses: 0, Ties: 0</p>
+
+      <button
+        onclick="
+      resetScore();
+    "
+        class="reset-button"
+      >
+        Reset Score
+      </button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
